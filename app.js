@@ -85,8 +85,7 @@ function applyPromoCode() {
     const promoCodeField = document.getElementById('promocode-input');
     const promoCode = promoCodeField.value;
     if (promoCode == 'stevekaku') {
-        const discountCalculate = totalCost() / 100;
-        const totalDiscountAmount = discountCalculate * 20;
+        const totalDiscountAmount = totalCost() * 0.20;
         const total = totalCost() - totalDiscountAmount;
         document.getElementById('total').innerText = total;
 
