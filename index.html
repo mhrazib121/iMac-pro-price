@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iMac</title>
+    <!--
+         Tailwind CSS
+     -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- custom CSS  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section class="grid grid-cols-2 gap-8 w-11/12 mx-auto mt-8">
+            <div>
+                <img class="w-9/12 mx-auto" src="images/mac.png" alt="iMac">
+            </div>
+            <div class="">
+                <div class="flex-1 mx-3">
+                    <h1 class="text-3xl font-bold">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                    <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores., 7-core GPU, and
+                        Neural Engine 8GB unified memory 256GB SSD storage Two Thunderboit/USB 4 ports Magic Mouse
+                        Keyboard- US English</p>
+
+                </div>
+                <div class="my-3">
+                    <h2 class="text-md font-bold mx-3">Memory</h2>
+                    <button class=" text-sm p-2 mx-2 border rounded-lg">8GB unified memory</button>
+                    <button class=" text-sm p-2 mx-2 border rounded-lg">16GB unified memory</button>
+                </div>
+                <div class="my-3">
+                    <h2 class="text-md font-bold mx-3">Storage</h2>
+                    <button class=" text-sm p-2 mx-2 border rounded-lg">256GB SSD storage</button>
+                    <button class=" text-sm p-2 mx-2 border rounded-lg">512GB SSD storage</button>
+                    <button class=" text-sm p-2 mx-2 border rounded-lg">1TB SSD storage</button>
+                </div>
+                <div class="my-3">
+                    <h2 class="text-md font-bold mx-3">Choose your delivery option</h2>
+                    <button class=" text-sm p-2 mx-1 border rounded-lg">Friday, Aug 25 FREE Prime Delivery</button>
+                    <button class=" text-sm p-2 mx-1 border rounded-lg">Friday, Aug 21 Delivery charge $20</button>
+                </div>
+
+                <!-- Price Calculatte  -->
+                <div class="grid grid-cols-2 my-8">
+                    <div class="">
+                        <h5 class="text-md font-bold p-1 my-2">Best Price </h5>
+                        <hr>
+                        <h5 class="text-md font-bold p-1 my-2">Extra Memory Cost </h5>
+                        <hr class="border border-gray-200">
+                        <h5 class="text-md font-bold p-1 my-2">Extra Storage Cost </h5>
+                        <hr class="border border-gray-300">
+                        <h5 class="text-md font-bold p-1 my-2">Delivery charge </h5>
+                        <hr class="border border-gray-400">
+                        <h5 class="text-md font-bold p-1 my-2">Total Price </h5>
+                        <hr>
+                        
+                     </div>
+
+                     <div class="">
+                        <h5 class="text-md font-bold p-1 my-2">$<span id="subtotal">1299</span></h5>
+                        <hr class="w-1/5">
+                        <h5 class="text-md font-bold p-1 my-2">$<span id="text">0</span></h5>
+                        <hr class="w-1/5  border border-gray-200 ">
+                        <h5 class="text-md font-bold p-1 my-2">$<span id="total-price">0</span></h5>
+                        <hr class="w-1/5  border border-gray-300 ">
+                        <h5 class="text-md font-bold p-1 my-2">$<span id="total-price">0</span></h5>
+                        <hr class="w-1/5  border border-gray-400 ">
+                        <h5 class="text-md font-bold p-1 my-2">$<span id="total-price">1299</span></h5>
+                        <hr class="w-1/5">
+                     </div>
+                     <div class="mt-8">
+                         <h6 class="font-semibold mb-2"> Add Pomo Code </h6>
+                         <input class="border p-2" type="text"> 
+                         <button class="p-2 bg-red-600 rounded-lg text-white">Apply</button>
+                     </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <h2 class="text-center text-4xl font-bold">Total: $1299</h2>
+    </main>
+
+
+    <!-- Custom JavaScript -->
+    <script src="app.js"></script>
+</body>
+
+</html>
